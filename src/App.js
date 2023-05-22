@@ -10,34 +10,61 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 //import HomeScreen from './componentes/HomeScreens'
 // import DetailsScreen from './componentes/DetailsScreen'
 
-import Aleatorio from './componentes/Aleatorio'
-import ContadorV2 from './Contador/ContadorV2'
-import ExTelasScreen from './componentes/ExTelasScreen'
-import ExTelasScreen2 from './componentes/ExTelasScreen2'
+// import Aleatorio from './componentes/Aleatorio'
+// import ContadorV2 from './Contador/ContadorV2'
+// import ExTelasScreen from './componentes/ExTelasScreen'
+// import ExTelasScreen2 from './componentes/ExTelasScreen2'
 
+
+import Familia from './componentes/relacao/Familia'
+import Membro from './componentes/relacao/Membro'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 
 const Stack = createNativeStackNavigator()
 
 export default () => (
 
+        <SafeAreaView style={styles.TelaIniciante}>
 
-        <NavigationContainer>
+        <Familia>
 
-            <Stack.Navigator>
+            <Membro nome="Ednaldo" sobrenome="Pereira"/>
+            <Membro nome="Suellen" sobrenome="Pereira"/>
+            <Membro nome="Jorlan" sobrenome="Pereira"/>
+            <Membro nome="Muzy" sobrenome="Pereira"/>
 
-                <Stack.Screen name="ExTelasScreen" component={ExTelasScreen}/>
-                <Stack.Screen name="ExTelasScreen2" component={ExTelasScreen2}/>
+        </Familia>
+
+        <Familia>
+
+            <Membro nome="Bak" sobrenome="Loud"/>
+            <Membro nome="Lzin" sobrenome="Loud"/>
+            <Membro nome="Jordan" sobrenome="Loud"/>
+            <Membro nome="Thurzin" sobrenome="Loud"/>
+
+        </Familia>
+
+        </SafeAreaView>
 
 
-                <Stack.Screen name="Aleatorio" component={Aleatorio}/>
-                <Stack.Screen name="ContadorV2" component={ContadorV2}/>
+
+        // <NavigationContainer>
+
+        //     <Stack.Navigator>
+
+        //         <Stack.Screen name="ExTelasScreen" component={ExTelasScreen}/>
+        //         <Stack.Screen name="ExTelasScreen2" component={ExTelasScreen2}/>
+
+
+        //         <Stack.Screen name="Aleatorio" component={Aleatorio}/>
+        //         <Stack.Screen name="ContadorV2" component={ContadorV2}/>
                 
 
 
-            </Stack.Navigator>
+        //     </Stack.Navigator>
 
-        </NavigationContainer>
+        // </NavigationContainer>
 
 
 
