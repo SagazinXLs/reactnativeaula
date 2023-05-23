@@ -14,12 +14,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack'
 // import ContadorV2 from './Contador/ContadorV2'
 // import ExTelasScreen from './componentes/ExTelasScreen'
 // import ExTelasScreen2 from './componentes/ExTelasScreen2'
+// import Familia from './componentes/relacao/Familia'
+// import Membro from './componentes/relacao/Membro'
 
-
-import Familia from './componentes/relacao/Familia'
-import Membro from './componentes/relacao/Membro'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
+import ListaProdutos from './componentes/produto/ListaProdutos'
+import ListaProdutoV2 from './componentes/produto/ListaProdutoV2'
 
 const Stack = createNativeStackNavigator()
 
@@ -27,7 +28,12 @@ export default () => (
 
         <SafeAreaView style={styles.TelaIniciante}>
 
-        <Familia>
+            <ListaProdutoV2/>
+
+
+
+
+        {/* <Familia>
 
             <Membro nome="Ednaldo" sobrenome="Pereira"/>
             <Membro nome="Suellen" sobrenome="Pereira"/>
@@ -43,7 +49,7 @@ export default () => (
             <Membro nome="Jordan" sobrenome="Loud"/>
             <Membro nome="Thurzin" sobrenome="Loud"/>
 
-        </Familia>
+        </Familia> */}
 
         </SafeAreaView>
 
